@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Card Hover Effect</title>
+    <link rel="stylesheet" href="diningchair.css">
+</head>
+<body>
+
+    <svg width="100%">
+        <text x="50%" y="100%">furni.shop</text>
+      </svg>
+
+    <div class="card blue">
+        <div class="product">
+            <span class="number">01</span>
+            <span class="sneakers">SNEAKERS</span>
+            <span class="price">Rs55/-</span>
+            <img src="./img/product-3.png">
+        </div>
+        <div class="title">
+            <h2>Dining Chair</h2>
+        </div>
+    </div>
+    <p>solid wood frame and fabric upholstery provide a classic look that will complement any decor. The armless design of the chair feels comfortable, making it a great choice for busy families.
+
+        Product Colour may vary slightly due to photographic lighting or your screen settings. The product images have props used for illustrative purposes.</p>
+
+
+
+    <script src="diningchair.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 5000,
+            glare: true,
+            'max-glare': 0.5,
+        });
+    </script>
+    
+</body>
+</html>
